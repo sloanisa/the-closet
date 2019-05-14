@@ -11,7 +11,6 @@ import Main from './components/Main';
   render(
       <React.Fragment>
         <Nav />
-        <Main />
       </React.Fragment>,
     document.getElementById('app')
   );
