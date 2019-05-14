@@ -1,0 +1,73 @@
+[{
+	"id": 1,
+	"name": "Adidas Skateboarding Sneaker",
+	"price": 5000,
+    "image": "img/adidas_skateboarding_sneaker.jpeg",
+    "type": "shoe"
+}, {
+	"id": 2,
+	"name": "Cherub Button Down",
+	"price": 3500,
+    "image": "img/cherub_button_down.jpeg",
+    "type": "top"
+}, {
+    "id": 3,
+	"name": "Hellcat Tee",
+	"price": 1500,
+    "image": "img/hellcat_tee.jpeg",
+    "type": "top"
+}, {
+    "id": 4,
+	"name": "High Art Button Down",
+	"price": 3500,
+    "image": "img/high_art_button_down.jpeg",
+    "type": "top"
+}, {
+    "id": 5,
+	"name": "Ikat Button Down",
+	"price": 3500,
+    "image": "img/ikat_button_down.jpeg",
+    "type": "top"
+}, {
+    "id": 6,
+	"name": "Moto Cab Slide Sandal",
+	"price": 3500,
+    "image": "img/moto_cab_slide_sandal.jpeg",
+    "type": "shoe"
+}, {
+    "id": 7,
+	"name": "Oscar Track Pant",
+	"price": 4500,
+    "image": "img/oscar_track_pant.jpeg",
+    "type": "pants"
+}, {
+    "id": 8,
+	"name": "Patagonia Baggies",
+	"price": 3500,
+    "image": "img/patagonia_baggies.jpeg",
+    "type": "pants"
+}, {
+    "id": 9,
+	"name": "Tie-Dye Seersucker Short",
+	"price": 2500,
+    "image": "img/tie_dye_seersucker_short.jpeg",
+    "type": "pants"
+}, {
+    "id": 10,
+	"name": "Vans Espadrille Sneaker",
+	"price": 5000,
+    "image": "img/vans_espadrille_sneaker.jpeg",
+    "type": "shoe"
+}, {
+    "id": 11,
+	"name": "Lazy Oaf Trousers",
+	"price": 5500,
+    "image": "img/lazy_oaf_trouser.jpeg",
+    "type": "pants"
+}, {
+    "id": 12,
+	"name": "Converse One Star Sneaker",
+	"price": 4500,
+    "image": "img/converse_one_star.jpeg",
+    "type": "shoe"
+}]
