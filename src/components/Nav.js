@@ -17,7 +17,6 @@ class Nav extends Component {
               <Link to="/admin"><h3>ADMIN</h3></Link>
               <Link to="/cart"><CartObject /></Link>
       </div>
-      <Link to="/"></Link>
     </React.Fragment>
     <Switch>
         <Route exact path="/" component={Main} />
