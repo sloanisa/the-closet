@@ -2,7 +2,7 @@
   "name": "the-closet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sloanisa.github.io",
+  "homepage": "https://sloanisa.github.io/the-closet",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
