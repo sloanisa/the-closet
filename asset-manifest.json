@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/the-closet/static/css/main.20c4b60e.chunk.css",
-    "main.js": "/the-closet/static/js/main.8632385d.chunk.js",
-    "main.js.map": "/the-closet/static/js/main.8632385d.chunk.js.map",
+    "main.js": "/the-closet/static/js/main.33f113b9.chunk.js",
+    "main.js.map": "/the-closet/static/js/main.33f113b9.chunk.js.map",
     "runtime~main.js": "/the-closet/static/js/runtime~main.9f1b5408.js",
     "runtime~main.js.map": "/the-closet/static/js/runtime~main.9f1b5408.js.map",
     "static/js/2.5d8f980b.chunk.js": "/the-closet/static/js/2.5d8f980b.chunk.js",
     "static/js/2.5d8f980b.chunk.js.map": "/the-closet/static/js/2.5d8f980b.chunk.js.map",
     "index.html": "/the-closet/index.html",
-    "precache-manifest.648d15471fe9c081c86f8db843135fa3.js": "/the-closet/precache-manifest.648d15471fe9c081c86f8db843135fa3.js",
+    "precache-manifest.9a9b9d3b4395526d509bb73252a501fe.js": "/the-closet/precache-manifest.9a9b9d3b4395526d509bb73252a501fe.js",
     "service-worker.js": "/the-closet/service-worker.js",
     "static/css/main.20c4b60e.chunk.css.map": "/the-closet/static/css/main.20c4b60e.chunk.css.map"
   }
