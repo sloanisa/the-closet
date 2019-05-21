@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Items from './Items';
 
-const dataUrl = './store-items.json';
+const dataUrl = '../store-items.json';
 
 class Main extends Component {
 
