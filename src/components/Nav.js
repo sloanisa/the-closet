@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import CartObject from './CartObject';
 
 class Nav extends Component {
