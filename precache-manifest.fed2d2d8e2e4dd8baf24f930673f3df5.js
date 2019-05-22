@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ecff1d7e23bb5e58788e2490e19a89b2",
+    "revision": "d3579f538f184b98b770382b20e15927",
     "url": "/the-closet/index.html"
   },
   {
-    "revision": "3ebcc938fa77e13ac09f",
+    "revision": "bbb2d0b3c44b26405cb7",
     "url": "/the-closet/static/css/main.20c4b60e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-closet/static/js/2.5d8f980b.chunk.js"
   },
   {
-    "revision": "3ebcc938fa77e13ac09f",
-    "url": "/the-closet/static/js/main.f862fb5e.chunk.js"
+    "revision": "bbb2d0b3c44b26405cb7",
+    "url": "/the-closet/static/js/main.9cdcf00d.chunk.js"
   },
   {
     "revision": "c65d37539334cbdf4218",
