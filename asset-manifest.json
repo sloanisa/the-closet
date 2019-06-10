@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/idm364-acs372/static/css/main.fbe87680.chunk.css",
-    "main.js": "/idm364-acs372/static/js/main.fe645cc9.chunk.js",
-    "main.js.map": "/idm364-acs372/static/js/main.fe645cc9.chunk.js.map",
-    "runtime~main.js": "/idm364-acs372/static/js/runtime~main.6bac73d9.js",
-    "runtime~main.js.map": "/idm364-acs372/static/js/runtime~main.6bac73d9.js.map",
-    "static/js/2.adc54c31.chunk.js": "/idm364-acs372/static/js/2.adc54c31.chunk.js",
-    "static/js/2.adc54c31.chunk.js.map": "/idm364-acs372/static/js/2.adc54c31.chunk.js.map",
-    "index.html": "/idm364-acs372/index.html",
-    "precache-manifest.64476a2fc919d4676e5d3a3ac2f8dfa1.js": "/idm364-acs372/precache-manifest.64476a2fc919d4676e5d3a3ac2f8dfa1.js",
-    "service-worker.js": "/idm364-acs372/service-worker.js",
-    "static/css/main.fbe87680.chunk.css.map": "/idm364-acs372/static/css/main.fbe87680.chunk.css.map"
+    "main.css": "/the-closet/static/css/main.fbe87680.chunk.css",
+    "main.js": "/the-closet/static/js/main.55cd3eaa.chunk.js",
+    "main.js.map": "/the-closet/static/js/main.55cd3eaa.chunk.js.map",
+    "runtime~main.js": "/the-closet/static/js/runtime~main.9f1b5408.js",
+    "runtime~main.js.map": "/the-closet/static/js/runtime~main.9f1b5408.js.map",
+    "static/js/2.0a76c9b6.chunk.js": "/the-closet/static/js/2.0a76c9b6.chunk.js",
+    "static/js/2.0a76c9b6.chunk.js.map": "/the-closet/static/js/2.0a76c9b6.chunk.js.map",
+    "index.html": "/the-closet/index.html",
+    "precache-manifest.f27a8aac98349ebbb42b01da30eedf80.js": "/the-closet/precache-manifest.f27a8aac98349ebbb42b01da30eedf80.js",
+    "service-worker.js": "/the-closet/service-worker.js",
+    "static/css/main.fbe87680.chunk.css.map": "/the-closet/static/css/main.fbe87680.chunk.css.map"
   }
 }
