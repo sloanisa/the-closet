@@ -1,52 +1,84 @@
 import React, { Component } from 'react';
-import { formatPrice } from '../utilities';
-import closetItems from '../js/closetItems'
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import ItemsIndiv from './ItemsIndiv'
+import Inventory from './Inventory';
+import CartPage from './CartPage';
+import storeItems from '../js/store-items';
+import base from '../js/base';
 
 class Items extends Component {
 
-  //  state = {
-  //       closetItems: []
-  //      }
-
-  //     loadItems = () => {
-  //       this.setState({ closetItems });
-  //     };
-
-  //    componentDidMount() {
-  //       this.loadItems();
-  //   }
-
     state = {
-      items: []
+      storeItems: [],
+      cartItems: [],
+      totalCost: 0
     }
 
-    async fetchItems() {
-      const result = await fetch(this.props['data-url']);
-      const items = await result.json();
-      this.setState({ items });
+    componentDidMount() {
+      this.ref = base.syncState('storeItems', {
+        context: this,
+        state: 'storeItems'
+      });
+      this.loadStoreItems();
     }
 
-  componentDidMount() {
-      this.fetchItems();
-  }
+    loadStoreItems = () => {
+      this.setState({ storeItems });
+    };
+
+    updateItem = (key, updatedItem) => {
+
+      const storeItems = { ...this.state.storeItems };
+    
+      storeItems[key] = updatedItem;
+
+     this.setState({ storeItems });
+    }
+    
+    deleteItem = (key) => {
+      const cartItems = { ...this.state.cartItems };
+      cartItems[key] = null;
+      console.log("ITEM ADDED TO CART: " + JSON.stringify(cartItems));
+      this.setState({ cartItems });
+    }
+
+    addItem = (key, addItem) => {
+      const cartItems = { ...this.state.cartItems };
+      cartItems[key] = addItem;
+      console.log("ITEM ADDED TO CART: " + JSON.stringify(cartItems));
+      this.setState({ cartItems });
+    };
+
+    setTotal = (cost) => {
+      var totalCost = this.state.totalCost;
+      totalCost = this.state.totalCost + cost;
+      this.setState({ totalCost });
+    }
 
   render() {
     return (
       <React.Fragment>
         <div className="container">
           <div className="items-container">
-            {this.state.items.map(item => (
-              <div key={item.id} className="items">
-                <img src={item.image}></img>
-                <p>{item.name}</p>
-                <p>{formatPrice(item.price)}</p>
-              </div>
+            {Object.keys(this.state.storeItems).map(key => (
+              <ItemsIndiv key={key} index={key} setTotal={this.setTotal} addItem={this.addItem} details={this.state.storeItems[key]}/>
             ))}
-
-            {/* {Object.keys(this.state.closetItems).map(key => (
-              <closetItems key={key} details={this.state.closetItems[key]} />
-            ))} */}
           </div>
+          <section>
+            <Inventory name="inventory"
+              updateItem={this.updateItem}
+              deleteItem={this.deleteItem}
+              storeItems={this.state.storeItems}
+            />
+          </section>
+          <section name="cart">
+            <CartPage
+              cartItems={this.state.cartItems}
+              setTotal={this.setTotal} 
+              totalCost={this.state.totalCost}
+            />
+          </section>
         </div>
       </React.Fragment>
     );

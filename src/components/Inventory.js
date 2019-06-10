@@ -1,36 +1,29 @@
-
 import React, { Component } from 'react';
+import EditItemForm from './EditItemForm';
 
 class Inventory extends Component {
-
-    state = {
-        inventory: []
-       }
-
-       async fetchInventory() {
-        const result = await fetch(this.props['data-url']);
-        const inventory = await result.json();
-        this.setState({ inventory });
-      }
-
-     componentDidMount() {
-        this.fetchInventory();
-    }
-    
   render() {
     return (
     <React.Fragment>
+      <div className="inventory" id="admin">
+
+        <hr className="hr-style-one"></hr>
+
+        <h2>The Closet Item Inventory</h2>
+        <br></br>
+
         <div className="inventory-container">
-            {this.state.inventory.map(inventoryItem => (
-            <form key={inventoryItem.id} className="indiv-inventory-form">
-                <input type="text" name="inventoryItemID" value={inventoryItem.id}></input>
-                <img src={inventoryItem.image}></img>
-                <input type="text" name="inventoryItemImage" value={inventoryItem.image}></input>
-                <input type="text" name="inventoryItemName" value={inventoryItem.name}></input>
-                <input type="text" name="inventoryItemPrice" value={inventoryItem.price}></input>
-            </form>
-            ))}
+        {Object.keys(this.props.storeItems).map(key => (
+          <EditItemForm
+            key={key}
+            index={key}
+            storeItems={this.props.storeItems[key]}
+            updateItem={this.props.updateItem}
+            deleteItem={this.props.deleteItem}
+          />
+        ))}
         </div>
+      </div>
     </React.Fragment>
     );
   }

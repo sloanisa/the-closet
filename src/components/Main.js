@@ -8,7 +8,7 @@ class Main extends Component {
   render() {
     return (
         <React.Fragment>
-            <Items data-url={dataUrl} />
+            <Items />
         </React.Fragment>
       
     );
